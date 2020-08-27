@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圆形效果</title>
+	<style>
+		#circle-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.btn-container {
+			position: relative;
+		}
+
+		button {
+			border: 0;
+			border-radius: 50px;
+			color: white;
+			background: #5f55af;
+			padding: 15px 20px 16px 60px;
+			text-transform: uppercase;
+			background: linear-gradient(to right, #f72585 50%, #5f55af 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+			transition: all 2s ease;
+			height: 40px;
+		}
+
+		svg {
+			background: #f72585;
+			padding: 8px;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		button:hover {
+			background-position: left bottom;
+		}
+
+	</style>
+</head>
+<body>
+<div id="circle-btn">
+	<div class="btn-container">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+			<path fill="none" d="M0 0h24v24H0z"/>
+			<path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+		</svg>
+		<button>Hover me</button>
+	</div>
+</div>
+</body>
+</html>
