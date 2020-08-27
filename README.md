@@ -7,3 +7,4 @@
 ## demo记录
 
 - 使用 css 编写 Loading
+- 纯 css3 实现小黄人动态效果
