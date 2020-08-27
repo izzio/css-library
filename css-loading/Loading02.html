@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading</title>
+	<style>
+		.loading {
+			width: 250px;
+		}
+
+		.loading div {
+			background-color: #ff298c;
+		}
+
+		.line {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 15px;
+			margin-top: 20px;
+		}
+
+		.line1 {
+			animation: loadingTranslate 1.5s 0s infinite;
+		}
+
+		.line2 {
+			animation: loadingTranslate 1.5s 0.1s infinite;
+		}
+
+		.line3 {
+			animation: loadingTranslate 1.5s 0.2s infinite;
+		}
+
+		.line4 {
+			animation: loadingTranslate 1.5s 0.3s infinite;
+		}
+
+		.line5 {
+			animation: loadingTranslate 1.5s 0.4s infinite;
+		}
+
+		@keyframes loadingTranslate {
+			50% {
+				width: 40px;
+			}
+			100% {
+				width: 15px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<div class="loading">
+	<div class="line line1"></div>
+	<div class="line line2"></div>
+	<div class="line line3"></div>
+	<div class="line line4"></div>
+	<div class="line line5"></div>
+</div>
+</body>
+</html>

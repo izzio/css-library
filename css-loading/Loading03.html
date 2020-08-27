@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading</title>
+	<style>
+		.loading div {
+			background-color: #761c19;
+		}
+
+		.line {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 15px;
+			margin-top: 20px;
+		}
+
+		.line1 {
+			animation: loadingTranslate 1s 0s infinite;
+		}
+
+		.line2 {
+			animation: loadingTranslate 1s .1s infinite;
+		}
+
+		.line3 {
+			animation: loadingTranslate 1s .2s infinite;
+		}
+
+		.line4 {
+			animation: loadingTranslate 1s .3s infinite;
+		}
+
+		.line5 {
+			animation: loadingTranslate 1s .4s infinite;
+		}
+
+		@keyframes loadingTranslate {
+			50% {
+				transform: translateY(-20px);
+			}
+			100% {
+				transform: translateY(0px);
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="loading">
+	<div class="line line1"></div>
+	<div class="line line2"></div>
+	<div class="line line3"></div>
+	<div class="line line4"></div>
+	<div class="line line5"></div>
+</div>
+</body>
+</html>

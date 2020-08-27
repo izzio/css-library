@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading</title>
+
+	<style>
+		.ring {
+			margin: 0 auto;
+			width: 25px;
+			height: 25px;
+			border-radius: 100%;
+			border: 5px solid #fff;
+			border-bottom: 5px solid transparent;
+			background-color: transparent;
+			animation: loadingRotate 1s linear infinite;
+		}
+
+		@keyframes loadingRotate {
+			from {
+				transform: translate(0%, 0%) rotate(0deg);
+			}
+			to {
+				transform: translate(0%, 0%) rotate(360deg);
+			}
+		}
+
+		/* 直接将translate(-50%, -50%)写在form和to里面，
+		是因为如果直接在元素上写"transform:translate(-50%, -50%)"，
+		在动画里又写"transform: rotate(0deg)"会覆盖掉元素上的transform元素而导致无法居中。 */
+	</style>
+</head>
+<body>
+<div class="loading">
+	<div class="ring"></div>
+</div>
+</body>
+</html>

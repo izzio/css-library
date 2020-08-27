@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading</title>
+	<style>
+		.circle {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin: 0 3px;
+			border-radius: 50%;
+			background-color: #f2c;
+		}
+
+		/* infinite表示动画无限次播放，alternate表示动画从头到尾后再从尾到头 */
+		.circle1 {
+			animation: loadingTranslate 1s linear 0s infinite alternate;
+		}
+
+		.circle2 {
+			animation: loadingTranslate 1s linear 0.4s infinite alternate;
+		}
+
+		.circle3 {
+			animation: loadingTranslate 1s linear 0.8s infinite alternate;
+		}
+
+		@keyframes loadingTranslate {
+			from {
+				transform: scale(0.2);
+			}
+
+			to {
+				transform: scale(1.2);
+			}
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="loading">
+		<div class="circle circle1"></div>
+		<div class="circle circle2"></div>
+		<div class="circle circle3"></div>
+	</div>
+</div>
+</body>
+</html>
